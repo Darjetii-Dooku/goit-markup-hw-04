@@ -385,8 +385,6 @@ ol {
   width: 168px;
   height: 88px;
   flex-shrink: 0;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-item-link {
   width: 100%;
@@ -398,6 +396,8 @@ ol {
   justify-content: center;
   color: var(--lightslate);
   border-color: var(--lightslate);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-item-link:hover,
 .logo-item-link:focus {
