@@ -213,6 +213,15 @@ ol {
   gap: 24px;
   margin-left: 156px;
 }
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: var(--whitecolor);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
 .second-section-title {
   font-family: "Roboto";
   font-style: normal;
