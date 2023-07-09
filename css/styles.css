@@ -54,7 +54,7 @@ ol {
 .header {
   border-bottom: 1px solid var(--button-border-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16);
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container {
   margin: 0 auto;
@@ -92,6 +92,7 @@ ol {
 .studio-link {
   color: var(--link-color) !important;
   position: relative;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .studio-link::after {
   content: "";
@@ -101,7 +102,6 @@ ol {
   height: 4px;
   background-color: var(--link-color);
   border-radius: 2px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link {
   text-decoration: none;
@@ -134,6 +134,8 @@ ol {
   letter-spacing: 0.02em;
   color: var(--slatecolor);
   text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 }
 .header-contacts:hover,
 .header-contacts:focus {
