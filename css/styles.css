@@ -324,6 +324,7 @@ ol {
 }
 .social-media-link {
   fill: var(--whitecolor);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-cards-titles {
   font-family: "Roboto";
