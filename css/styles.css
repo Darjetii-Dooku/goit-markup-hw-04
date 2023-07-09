@@ -406,6 +406,7 @@ ol {
 }
 .logo-item {
   color: currentColor;
+  fill: currentColor;
 }
 /* Footer */
 .footer-logo {
