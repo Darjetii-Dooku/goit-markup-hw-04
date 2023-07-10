@@ -452,6 +452,7 @@ ol {
   max-width: 264px;
 }
 .footer-media-container {
+  margin-right: 120px;
 }
 .footer-media-list {
   display: flex;
