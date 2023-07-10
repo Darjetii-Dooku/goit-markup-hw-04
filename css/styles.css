@@ -440,6 +440,7 @@ ol {
   background: #2e2f42;
   color: var(--whitecolor);
   padding: 100px 0;
+  display: flex;
 }
 .footer-logo-container {
   margin-left: 156px;
