@@ -434,7 +434,6 @@ ol {
 .footer-container {
   display: flex;
   align-items: baseline;
-  margin-right: 120px;
 }
 .footer-background {
   background: #2e2f42;
@@ -453,7 +452,6 @@ ol {
   max-width: 264px;
 }
 .footer-media-container {
-  margin-right: 120px;
 }
 .footer-media-list {
   display: flex;
