@@ -380,9 +380,10 @@ ol {
   align-items: flex-start;
   align-items: center;
   margin-left: 156px;
+  margin-right: 156px;
 }
 .fifth-section-logo-item {
-  width: 168px;
+  width: calc((100% - 120px) / 6);
   height: 88px;
   flex-shrink: 0;
 }
