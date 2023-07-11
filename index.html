@@ -24,7 +24,9 @@
           >
           <ul class="header-list list">
             <li>
-              <a class="studio-link header-links link" href="./index.html"
+              <a
+                class="studio-link active header-links link"
+                href="./index.html"
                 >Studio</a
               >
             </li>
@@ -59,7 +61,7 @@
           <h1 class="first-section-text">
             Effective Solutions for Your Business
           </h1>
-          <button class="first-section-button" type="button" data-modal-open="">
+          <button class="first-section-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -445,11 +447,11 @@
       </div>
     </footer>
     <!-- Modal Window -->
-    <div class="modal-window-container is-hidden" data-modal="">
-      <div class="modal-window">
-        <button class="modal-close-button" type="button" data-modal-close="">
-          <svg class="modal-close-button-icon" width="8" height="8">
-            <use href=""></use>
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#modal-close-icon"></use>
           </svg>
         </button>
       </div>
