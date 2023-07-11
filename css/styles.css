@@ -56,6 +56,7 @@ ol {
   --greencolor: #31d0aa;
   --dairycolor: #fcfcfc;
   --modalcolor: #2e2f4266;
+  --anim: 250ms;
 }
 /* Header */
 .header {
@@ -529,6 +530,11 @@ ol {
 }
 .project-cards-item {
   width: 360px;
+  position: relative;
+  overflow: hidden;
+}
+.project-cards-item:hover .overlay {
+  transform: translate(0);
 }
 .project-cards-titles {
   font-family: "Roboto";
@@ -544,6 +550,7 @@ ol {
   padding: 32px 16px;
   border: 1px solid var(--button-border-color);
   border-top: none;
+  z-index: ;
 }
 .project-cards-text {
   line-height: 1.5;
@@ -552,6 +559,16 @@ ol {
 }
 /* Overlay text */
 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding: 0px 32px 284px 32px;
+  background-color: var(--bluecolor);
+  height: 300px;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform var(--anim);
 }
 .overlay-text {
   width: 296px;
@@ -561,6 +578,7 @@ ol {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
+  padding-top: 32px;
 }
 
 /* Backdrop */
@@ -571,11 +589,15 @@ ol {
   width: 100%;
   height: 100%;
   background-color: var(--modalcolor);
+  transition: opacity 250ms ease-out, visibility 250ms ease-out;
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+}
+.backdrop.is-hidden .modal {
+  opacity: 0;
 }
 .modal {
   width: 408px;
