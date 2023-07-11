@@ -630,7 +630,7 @@ ol {
   transition: transform var(--anim) cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-icon {
-  fill: var(--dark-blue-color);
+  fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn {
@@ -648,10 +648,11 @@ ol {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color var(--anim) cubic-bezier(0.4, 0, 0.2, 1),
     border var(--anim) cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--dark-blue-color);
 }
 .modal-btn:hover,
 .modal-btn:focus {
   border: none;
   background-color: var(--link-color);
-  fill: var(--classic-white-color);
+  color: var(--classic-white-color);
 }
