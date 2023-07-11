@@ -102,7 +102,6 @@ ol {
   bottom: -1px;
   height: 4px;
   background-color: var(--link-color);
-  border-radius: 2px;
 }
 .link {
   text-decoration: none;
@@ -134,6 +133,7 @@ ol {
   height: 4px;
   background-color: var(--link-color);
   bottom: -1px;
+  border-radius: 2px;
 }
 .active {
   color: var(--link-color) !important;
@@ -532,6 +532,7 @@ ol {
 }
 .project-cards-link {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-cards-link:hover,
 .project-cards-link:focus {
@@ -545,8 +546,8 @@ ol {
   position: relative;
   overflow: hidden;
 }
-.project-cards-item:hover .overlay {
-  transform: translate(0);
+.project-cards-item:hover .overlay-text {
+  transform: translateY(0);
 }
 .project-cards-titles {
   font-family: "Roboto";
@@ -567,6 +568,16 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slatecolor);
+  transform: translateY(0%);
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  padding: 40px 32px;
+  background-color: var(--bluecolor);
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Overlay text */
 .overlay {
@@ -591,7 +602,10 @@ ol {
   letter-spacing: 0.32px;
   padding-top: 32px;
 }
-
+.pj-cards-wrapper {
+  position: relative;
+  overflow: hidden;
+}
 /* Backdrop */
 .backdrop {
   position: fixed;
