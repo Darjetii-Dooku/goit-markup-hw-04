@@ -184,7 +184,7 @@ ol {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 1440px;
+  max-width: 1440px;
 }
 .first-section-text {
   font-family: "Roboto";
