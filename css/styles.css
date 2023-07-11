@@ -138,6 +138,7 @@ ol {
   width: 100%;
   height: 4px;
   background-color: var(--link-color);
+  bottom: -1px;
 }
 .header-links:hover,
 .header-links:focus {
@@ -183,6 +184,7 @@ ol {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
 }
 .first-section-text {
   font-family: "Roboto";
@@ -555,7 +557,6 @@ ol {
   padding: 32px 16px;
   border: 1px solid var(--button-border-color);
   border-top: none;
-  z-index: ;
 }
 .project-cards-text {
   line-height: 1.5;
