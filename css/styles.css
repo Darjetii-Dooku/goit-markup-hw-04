@@ -29,8 +29,7 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
 }
-.current {
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -415,10 +414,6 @@ ol {
   color: var(--link-color);
   border-color: var(--link-color);
 }
-.foster-peters-fisrt {
-}
-.foster-peters-second {
-}
 .logo-item {
   color: currentColor;
   fill: currentColor;
@@ -515,6 +510,10 @@ ol {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--button-border-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -538,6 +537,8 @@ ol {
 .project-cards-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0%);
 }
 .project-cards-item {
   width: 360px;
