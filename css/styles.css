@@ -414,6 +414,11 @@ ol {
   color: var(--link-color);
   border-color: var(--link-color);
 }
+.logo-item-link:hover svg,
+.logo-item-link:focus svg {
+  color: var(--link-color);
+  fill: var(--link-color);
+}
 .logo-item {
   color: currentColor;
   fill: currentColor;
