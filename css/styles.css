@@ -672,3 +672,59 @@ ol {
   background-color: var(--link-color);
   color: var(--classic-white-color);
 }
+.modal-form {
+  display: flex;
+  position: absolute;
+  top: 72px;
+  left: 24px;
+  right: 24px;
+
+  align-items: center;
+}
+.modal-form-legend {
+  color: var(--dark-blue-color);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+  width: 360px;
+}
+.modal-form-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.modal-form-label-text {
+  color: var(--lightslate);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.48px;
+  margin-bottom: 4px;
+}
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.modal-form-comment::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.48px;
+  padding-left: 16px;
+  padding-top: 8px;
+}
+.modal-form-comment {
+  margin: 0;
+  padding: 0;
+}
